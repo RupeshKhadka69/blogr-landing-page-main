@@ -1,0 +1,398 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+:root {
+  --clr-primary-100: hsl(13, 100%, 72%);
+  --clr-primary-200: hsl(355, 100%, 74%);
+  --clr-primary-300: hsl(353, 100%, 62%);
+  --clr-primary-400: hsl(356, 100%, 66%);
+  /* color Neutral */
+  --clr-neutral-100: hsl(240, 8%, 88%);
+  --clr-neutral-200: hsl(0, 0%, 100%);
+
+  /* color gradient */
+  --clr-gradient-100: hsl(208, 49%, 24%);
+  --clr-gradient-200: hsl(237, 23%, 32%);
+  --clr-gradient-300: hsl(207, 13%, 34%);
+  --clr-gradient-400: hsl(237, 17%, 21%);
+  --clr-gradient-500: hsl(240, 10%, 16%);
+
+  /* custom size for different things */
+
+  --size-100: 1rem;
+  --size-200: 2rem;
+  --size-300: 3rem;
+  --size-400: 4rem;
+  --size-500: 5rem;
+  --size-600: 6rem;
+  --size-700: 7rem;
+  --size-800: 8rem;
+  --size-900: 9rem;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Overpass", sans-serif;
+  background-color: var(--clr-neutral-100);
+}
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* custom style */
+/* background-color */
+.bg-primary-100 {
+  background-color: var(--clr-primary-100);
+}
+.bg-primary-200 {
+  background-color: var(--clr-primary-200);
+}
+.bg-primary-300 {
+  background-color: var(--clr-primary-300);
+}
+.bg-primary-400 {
+  background-color: var(--clr-primary-400);
+}
+
+.bg-neutral-100 {
+  background-color: var(--clr-neutral-100);
+}
+.bg-neutral-200 {
+  background-color: var(--clr-neutral-200);
+}
+
+.bg-gradient-100 {
+  background-color: var(--clr-gradient-100);
+}
+.bg-gradient-200 {
+  background-color: var(--clr-gradient-200);
+}
+.bg-gradient-300 {
+  background-color: var(--clr-gradient-300);
+}
+.bg-gradient-400 {
+  background-color: var(--clr-gradient-400);
+}
+.bg-gradient-500 {
+  background-color: var(--clr-gradient-500);
+}
+/* color */
+.primary-100 {
+  color: var(--clr-primary-100);
+}
+.primary-200 {
+  color: var(--clr-primary-200);
+}
+.primary-300 {
+  color: var(--clr-primary-300);
+}
+.primary-400 {
+  color: var(--clr-primary-400);
+}
+
+.neutral-100 {
+  color: var(--clr-neutral-100);
+}
+.neutral-200 {
+  color: var(--clr-neutral-200);
+}
+
+.gradient-100 {
+  color: var(--clr-gradient-100);
+}
+.gradient-200 {
+  color: var(--clr-gradient-200);
+}
+.gradient-300 {
+  color: var(--clr-gradient-300);
+}
+.gradient-400 {
+  color: var(--clr-gradient-400);
+}
+.gradient-500 {
+  color: var(--clr-gradient-500);
+}
+.fs-100 {font-size: .88rem;}
+.fs-200 {font-size: .95rem;}
+.fs-300 {font-size:  1rem;}
+.fs-400 {font-size: 1.25rem;}
+.fs-500 {font-size:  1.5rem;}
+.fs-600 {font-size: 1.75rem;}
+.fs-700 {font-size: 2rem;}
+.fs-800 {font-size: 2.25rem;}
+.fs-900 {font-size: 2.35rem;}
+.fs-1000 {font-size: 3rem;}
+/* font weight */
+.fw-bold {font-weight: bold;}
+/* font-family */
+.ff-ubuntu {
+  font-family: "Ubuntu", sans-serif;
+}
+.ff-overpass {
+  font-family: "Overpass", sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+}
+.fw-300 {font-weight: 300;}
+.fw-300 {font-weight: 600;}
+
+.padding-block-100 {
+  padding-top: var(--size-100);
+}
+.padding-block-200 {
+  padding-top: var(--size-200);
+}
+.padding-block-300 {
+  padding-top: var(--size-300);
+}
+.padding-block-400 {
+  padding-top: var(--size-400);
+}
+.padding-block-500 {
+  padding-top: var(--size-500);
+}
+.padding-block-600 {
+  padding-top: var(--size-600);
+}
+.padding-block-700 {
+  padding-top: var(--size-700);
+}
+.padding-block-800 {
+  padding-top: var(--size-800);
+}
+.padding-block-900 {
+  padding-top: var(--size-900);
+}
+.center{text-align: center;}
+.mt-100 {
+  margin-top: 1rem;
+}
+.mt-200 {
+  margin-top: 2rem;
+}
+.mt-300 {
+  margin-top: 3rem;
+}
+.mt-400 {
+  margin-top: 4rem;
+}
+.mt-500 {
+  margin-top: 5rem;
+}
+.gap-1 {
+  gap: 1rem;
+}
+.gap-2 {
+  gap: 2rem;
+}
+.gap-3 {
+  gap: 2rem;
+}
+/* container width */
+.container {
+  max-width: 1180px;
+  margin-inline: auto;
+  padding-block: var(--size-200);
+}
+/* for the general style of the button */
+.button {
+  padding: .6rem .8rem;
+  border-radius: 20px;
+  border: 0;
+  text-align: center;
+  align-items: center;
+}
+/* extra button  login */
+.extra-button {
+  border: 0;
+  background: none;
+  color: var(--clr-neutral-200);
+}
+
+/* css main styles starts from here */
+/* Navbar Section Starts from Here */
+
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+}
+/* nav */
+
+/* nav {
+  gap: 3rem;
+} */
+/* drop-down menu style */
+.nav {
+  flex: 2;
+  position: relative;
+  left: 2rem;
+}
+.ul-gap {
+  gap: 2rem;
+}
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  float: left;
+  position: relative;
+  display: block;
+}
+
+.nav a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: var(--clr-neutral-200);
+}
+
+.nav .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  /* left: 0; */
+  
+  padding: .8rem 1.2rem .8rem .5rem;
+  background-color: var(--clr-neutral-200);
+  z-index: 1;
+}
+
+.nav .dropdown li {
+  float: none;
+}
+
+/* background-image for landing page */
+.landing-page {
+  background-image: url(./images/bg-pattern-intro-desktop.svg);
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-color: var(--clr-primary-400);
+  z-index: -1;
+}
+.landing-page {
+  border-bottom-left-radius: 5rem;
+}
+
+/* Landing Page style */
+.landing-page-text {
+  place-items: center;
+}
+
+
+/* Intro page  */
+.intro-text {
+  place-items: center;
+}
+.hidden {overflow: hidden;}
+@media (min-width: 50em ) {
+  .even-column {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+  .intro-text {
+    align-items: flex-start;
+    padding-top: 3rem;
+  }
+  .intro-page-image{
+    position: relative;
+    left: 250px;
+    top: -100px;
+    overflow: hidden;
+  }
+}
+.small-mobile-section {
+  background-image: url(./images/bg-pattern-circles.svg);
+  background-position: left;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-color: var(--clr-gradient-400);
+  height: 400px;
+
+}
+@media(min-width: 50em ) {
+  .third-sec-grid {
+    justify-content: start;
+  }
+  
+  .third-section-image {
+    max-width: 35rem; 
+    position: relative;
+    top: -80px;
+  }
+
+  .right-position {
+    position: relative;
+    right: 200px;
+  }
+  .align-center {
+    align-items: center;
+  }
+ 
+  
+}
