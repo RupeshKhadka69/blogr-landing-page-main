@@ -21,10 +21,12 @@
         <div class="container">
           <div class="navbar flex">
             <a href=""><img src="./images/logo.svg" alt="logo" /></a>
-            <nav class="nav">
-              <ul class="flex ul-gap">
+           <!-- <div class="mb-nav flex"> -->
+
+             <nav class="nav">
+               <ul class="mb-flex | flex ul-gap">
                 <li class="menubutton">
-                  <a href="#" class="flex">Product </a>
+                  <a href="#" class="flex fw-bold">Product </a>
                   <ul class="dropdown">
                     <li><a href="#">Overview</a></li>
                     <li><a href="#">Pricing </a></li>
@@ -34,7 +36,7 @@
                   </ul>
                 </li>
                 <li class="menubutton">
-                  <a href="#" class="flex">Company </a>
+                  <a href="#" class="flex fw-bold">Company </a>
                   <ul class="dropdown">
                     <li><a href="#">About</a></li>
                     <li><a href="#">Team</a></li>
@@ -44,7 +46,7 @@
                   </ul>
                 </li>
                 <li class="menubutton">
-                  <a href="#">Connect</a>
+                  <a href="#" class="fw-bold">Connect</a>
                   <ul class="dropdown">
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">Newsletter</a></li>
@@ -52,11 +54,16 @@
                   </ul>
                 </li>
               </ul>
+              <div class="mt-100 padding-block-200 mobile side-buttonss flex gap-1">
+                <button class=" extra-button">Login</button>
+                <button class="button">Sign up</button>
+              </div>
             </nav>
-            <div class="side-buttons flex gap-1">
+            <div class="desktop side-buttons flex gap-1">
               <button class="extra-button">Login</button>
               <button class="button">Sign up</button>
             </div>
+          <!-- </div> -->
           </div>
 
           <div class="landing-page-text padding-block-900 grid">
